@@ -1,0 +1,11 @@
+services:
+  my-angular-app:
+    build: .
+    container_name: angular-app
+    ports:
+      - "4200:4200" 
+    volumes:
+      - uploads-data:/src/app/public/uploads
+    restart: unless-stopped
+volumes:
+  uploads-data:
