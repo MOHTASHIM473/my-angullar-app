@@ -1,0 +1,28 @@
+.toast-container {
+  z-index: 1100;
+}
+
+.toast {
+  min-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.toast.hide {
+  display: none;
+}
+
+.toast-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-bottom: none;
+}
+
+.toast-body {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.btn-close-white {
+  filter: brightness(0) invert(1);
+}

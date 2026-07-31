@@ -1,0 +1,80 @@
+<footer id="contact" class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5 class="fw-bold mb-3">
+          <i class="bi bi-shop"></i> ShopHub
+        </h5>
+        <p class="text-muted">Your one-stop destination for premium electronics, fashion, and accessories. Quality products at unbeatable prices.</p>
+        <div class="social-links mt-3">
+          <a href="#" class="text-light me-3" (click)="preventDefault($event)"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-3" (click)="preventDefault($event)"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-light me-3" (click)="preventDefault($event)"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light" (click)="preventDefault($event)"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-md-4">
+        <h6 class="fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="scrollToTop($event)">Home</a></li>
+          <li class="mb-2"><a href="#products" class="text-muted text-decoration-none">Products</a></li>
+          <li class="mb-2"><a href="#categories" class="text-muted text-decoration-none">Categories</a></li>
+          <li class="mb-2"><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-2 col-md-4">
+        <h6 class="fw-bold mb-3">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="filterByCategory($event, 'Electronics')">Electronics</a></li>
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="filterByCategory($event, 'Clothing')">Clothing</a></li>
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="filterByCategory($event, 'Accessories')">Accessories</a></li>
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="filterByCategory($event, 'All')">New Arrivals</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-2 col-md-4">
+        <h6 class="fw-bold mb-3">Support</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="showInfo($event, 'FAQ')">FAQ</a></li>
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="showInfo($event, 'Shipping Info')">Shipping</a></li>
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="showInfo($event, 'Returns Policy')">Returns</a></li>
+          <li class="mb-2"><a href="#" class="text-muted text-decoration-none" (click)="showInfo($event, 'Contact Us')">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-2">
+        <h6 class="fw-bold mb-3">Payment Methods</h6>
+        <div class="payment-icons">
+          <div class="payment-badge bg-light text-dark px-2 py-1 rounded mb-2 d-inline-block">
+            <i class="bi bi-credit-card"></i> Visa
+          </div>
+          <div class="payment-badge bg-light text-dark px-2 py-1 rounded mb-2 d-inline-block">
+            <i class="bi bi-credit-card"></i> MasterCard
+          </div>
+          <div class="payment-badge bg-light text-dark px-2 py-1 rounded mb-2 d-inline-block">
+            <i class="bi bi-paypal"></i> PayPal
+          </div>
+          <div class="payment-badge bg-light text-dark px-2 py-1 rounded d-inline-block">
+            <i class="bi bi-apple"></i> Apple Pay
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="my-4 border-secondary">
+    
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="text-muted mb-0">&copy; 2024 ShopHub. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p class="text-muted mb-0">
+          <a href="#" class="text-muted text-decoration-none me-3" (click)="showInfo($event, 'Privacy Policy')">Privacy Policy</a>
+          <a href="#" class="text-muted text-decoration-none" (click)="showInfo($event, 'Terms of Service')">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

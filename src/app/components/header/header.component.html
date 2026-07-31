@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <i class="bi bi-shop"></i> ShopHub
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <form class="d-flex mx-auto my-2 my-lg-0" role="search" (ngSubmit)="onSearchSubmit()">
+        <div class="input-group">
+          <input class="form-control" 
+                 type="search" 
+                 placeholder="Search products..." 
+                 aria-label="Search"
+                 [value]="searchQuery"
+                 (input)="onSearchChange($event)">
+          <button class="btn btn-outline-light" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </form>
+      
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" (click)="scrollToTop($event)">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#products">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="scrollToFooter($event)">Contact</a>
+        </li>
+      </ul>
+      
+      <button class="btn btn-primary position-relative ms-3" (click)="cartService.toggleCart()">
+        <i class="bi bi-cart3"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" 
+              *ngIf="cartCount > 0">
+          {{ cartCount }}
+          <span class="visually-hidden">items in cart</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>

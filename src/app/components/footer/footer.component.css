@@ -1,0 +1,45 @@
+footer {
+  margin-top: auto;
+}
+
+footer h5 {
+  color: #ffc107;
+}
+
+footer h6 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107 !important;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  color: #ffc107 !important;
+}
+
+.payment-badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.payment-badge:hover {
+  background-color: #ffc107;
+  color: #000 !important;
+}
+
+hr {
+  opacity: 0.3;
+}

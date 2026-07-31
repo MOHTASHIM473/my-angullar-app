@@ -1,0 +1,13 @@
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
+  <div class="toast show" [class.hide]="!showToast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header bg-success text-white">
+      <i class="bi bi-check-circle-fill me-2"></i>
+      <strong class="me-auto">Success</strong>
+      <small>Just now</small>
+      <button type="button" class="btn-close btn-close-white" (click)="hide()"></button>
+    </div>
+    <div class="toast-body">
+      {{ message }}
+    </div>
+  </div>
+</div>
